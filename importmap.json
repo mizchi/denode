@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "delay": "./denode_modules/delay.js",
+    "preact": "./denode_modules/preact.js",
+    "preact/hooks": "./denode_modules/preact/hooks.js",
+    "preact-render-to-string": "./denode_modules/preact-render-to-string.js",
+    "lodash/flatten": "./denode_modules/lodash/flatten.js"
+  }
+}

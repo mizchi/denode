@@ -1,0 +1,47 @@
+{
+  "name": "my-denoify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "denode": "yarn ts-node denode.ts",
+    "run": "deno run --unstable --importmap importmap.json examples/run-denoded.ts"
+  },
+  "devDependencies": {
+    "@types/delay": "^3.1.0",
+    "@types/lodash": "^4.14.155",
+    "@types/lodash-es": "^4.17.3",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.1",
+    "@rollup/plugin-virtual": "^2.0.2",
+    "lodash": "^4.17.15",
+    "lodash-es": "^4.17.15",
+    "preact": "^10.4.4",
+    "preact-render-to-string": "^5.1.9",
+    "rollup": "^2.15.0"
+  },
+  "denode": {
+    "lodash/flatten": {
+      "type": "cjs"
+    },
+    "delay": {
+      "type": "cjs"
+    },
+    "preact": {
+      "type": "esm",
+      "path": "dist/preact.module.js"
+    },
+    "preact/hooks": {
+      "type": "esm",
+      "path": "dist/hooks.module.js"
+    },
+    "preact-render-to-string": {
+      "type": "esm",
+      "path": "dist/index.module.js"
+    }
+  }
+}
