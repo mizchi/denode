@@ -19,7 +19,7 @@
     "@rollup/plugin-node-resolve": "^8.0.1",
     "@rollup/plugin-virtual": "^2.0.2",
     "lodash": "^4.17.15",
-    "lodash-es": "^4.17.15",
+    "lodash-es": "^4.17.21",
     "preact": "^10.4.4",
     "preact-render-to-string": "^5.1.9",
     "rollup": "^2.15.0"
